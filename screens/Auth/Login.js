@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import styled from "styled-components/native";
-import { useAuthContext } from "../../AuthContext";
+import { useAuthContext } from "../../contexts/AuthContext";
 import { TouchableOpacity } from "react-native";
 
 const View = styled.View`

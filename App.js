@@ -12,7 +12,7 @@ import { apolloClientOptions } from "./apollo";
 import { ThemeProvider } from "styled-components";
 import styles from "./styles";
 import NavController from "./components/NavController";
-import { AuthProvider } from "./AuthContext";
+import { AuthProvider } from "./contexts/AuthContext";
 
 // #region Functions
 

@@ -1,11 +1,11 @@
 import React from "react";
-import { useAuthContext } from "../AuthContext";
-import AuthNavigation from "../navigations/AuthNavigation";
-import MainNavigation from "../navigations/MainNavigation";
+import { useAuthContext } from "../contexts/AuthContext";
+import AuthContainer from "../navigations/AuthContainer";
+import MainContainer from "../navigations/MainContainer";
 
 const NavController = () => {
   const { isLoggedIn } = useAuthContext();
-  return isLoggedIn ? <MainNavigation /> : <AuthNavigation />;
+  return isLoggedIn ? <MainContainer /> : <AuthContainer />;
 };
 
 export default NavController;

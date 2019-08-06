@@ -6,7 +6,7 @@ import SelectPhoto from "../screens/Photo/SelectPhoto";
 import TakePhoto from "../screens/Photo/TakePhoto";
 import UploadPhoto from "../screens/Photo/UploadPhoto";
 
-const PhotoTabs = createMaterialTopTabNavigator(
+const PhotoTabsNavigator = createMaterialTopTabNavigator(
   {
     SelectPhoto,
     TakePhoto
@@ -16,9 +16,9 @@ const PhotoTabs = createMaterialTopTabNavigator(
   }
 );
 
-const PhotoNavigation = createStackNavigator({
-  PhotoTabs,
+const PhotoNavigator = createStackNavigator({
+  PhotoTabsNavigator,
   UploadPhoto
 });
 
-export default PhotoNavigation;
+export default PhotoNavigator;
